@@ -1,0 +1,8 @@
+uuid: 8c45a298-6a30-4277-992d-3efdd46bc9f3
+langcode: en
+status: true
+dependencies: {  }
+name: Formats
+vid: formats
+description: 'What kind of resource?'
+weight: 0

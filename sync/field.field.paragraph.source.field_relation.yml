@@ -1,0 +1,29 @@
+uuid: 8daf4e1b-5163-4dc9-9521-85baecf71494
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_relation
+    - paragraphs.paragraphs_type.source
+  content:
+    - 'taxonomy_term:relations:e0d41a68-5899-4079-9957-e2afb79817ce'
+id: paragraph.source.field_relation
+field_name: field_relation
+entity_type: paragraph
+bundle: source
+label: Relation
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: e0d41a68-5899-4079-9957-e2afb79817ce
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: relations
+      display_name: entity_reference_2
+      arguments: {  }
+field_type: entity_reference

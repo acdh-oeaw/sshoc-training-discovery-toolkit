@@ -1,0 +1,33 @@
+uuid: 26516f43-61eb-4708-bd19-d092f8817fa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - filter
+    - matomo
+    - search_api_autocomplete
+    - shortcut
+    - system
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'edit own comments'
+  - 'opt-in or out of matomo tracking'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'use search_api_autocomplete for search_entities'
+  - 'use text format basic_html'
+  - 'use text format restricted_html'

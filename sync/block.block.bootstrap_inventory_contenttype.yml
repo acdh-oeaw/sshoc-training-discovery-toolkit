@@ -1,0 +1,29 @@
+uuid: 70f3ea87-f1eb-4b32-bbf9-a40d8d18b915
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_type
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap_inventory
+id: bootstrap_inventory_contenttype
+theme: bootstrap_inventory
+region: sidebar_second
+weight: -13
+provider: null
+plugin: 'facet_block:content_type'
+settings:
+  id: 'facet_block:content_type'
+  label: 'Content type'
+  label_display: '0'
+  provider: facets
+  block_id: bootstrap_inventory_contenttype
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/entities\r\n/start"

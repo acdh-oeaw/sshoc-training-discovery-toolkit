@@ -1,0 +1,56 @@
+uuid: 244ea4c7-ee8f-4dd5-b7b4-7cb64f2cb8af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.source.field_relation
+    - field.field.paragraph.source.field_source
+    - paragraphs.paragraphs_type.source
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_combine:
+      children:
+        - field_relation
+        - field_source
+      label: Combine
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: combine-two-elements
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+id: paragraph.source.default
+targetEntityType: paragraph
+bundle: source
+mode: default
+content:
+  field_relation:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_source:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

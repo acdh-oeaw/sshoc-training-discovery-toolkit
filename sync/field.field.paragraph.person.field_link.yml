@@ -1,0 +1,23 @@
+uuid: 7d6034e7-7643-4ccf-829a-b3edd977e2af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.person
+  module:
+    - link
+id: paragraph.person.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: person
+label: Link
+description: 'You can add links to Twitter (please put in such cases Twitter into the Link text), to contact forms, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link

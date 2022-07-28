@@ -1,0 +1,4 @@
+# SSHOC WP6 - SSH Training Discovery Toolkit
+
+Drupal setup for the training discovery toolkit for deployment on ACDH-CH production server. Includes composer (/composer) and configuration files (/sync) to set up Drupal and the adapted theme (/theme/bootstrap_inventory) for the project. Additionally, there is a module in development for doing some curation stuff (still in Drupal 8 and therefore deactivated).
+Additionally (/drupal-migration-templates), there is a quick'n dirty import script for data collected by members of SSHOC WP6 T6.5 in a spreadsheet (/source-gspreadsheet-import) and based on this the mapping for the migrate module of Drupal, to import the data into Drupal using the config import interface. There is also a similar script on importing the data from the SSK (Standarization Survival Kit) into Drupal (/ssk-import).

@@ -1,0 +1,23 @@
+uuid: 569081aa-cc4b-4f6c-9fca-873cff23b799
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_size
+    - paragraphs.paragraphs_type.extent_of_item
+id: paragraph.extent_of_item.field_size
+field_name: field_size
+entity_type: paragraph
+bundle: extent_of_item
+label: Size
+description: 'Number of units (use a round number if estimated)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

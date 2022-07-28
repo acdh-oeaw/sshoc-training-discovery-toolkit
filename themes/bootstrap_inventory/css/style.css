@@ -1,0 +1,442 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+/*
+ * general layout settings
+ * changes on footer width and region-footer are connected with sshoc branding
+ */
+.footer {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+
+.region-footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+}
+
+.tabs {
+  padding-bottom: 1em;
+}
+
+.feed-icons {
+  font-size: 12px;
+  text-align: center;
+}
+
+/*
+ * No well otherwise due to no search results
+ */
+.well {
+  background-color: inherit; 
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/*
+ * general settings for source and item
+ */
+.page-node-type-item .block,
+.page-node-type-source .block {
+  padding-bottom: 1em;
+  font-size: 15px;
+}
+
+/*
+ * Login in footer needs some adjustments
+ */
+#block-bootstrap-inventory-account-menu {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/*
+ * SSHOC branding
+ */
+body {
+  background: #F4F4F4 url(../images/SSHOCSlider.png) no-repeat left top;
+  background-size: 100% 190px;
+}
+
+/*
+ * navbar and background-size should be the same + 10px = 200px all in all
+ */
+.navbar {
+  min-height: 80px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 5px 15px 5px 15px;
+}
+
+.main-container {
+  background-color: #F4F4F4;
+}
+
+.menu.menu--main.nav.navbar-nav {
+  margin-left: 100px;
+}
+
+.name.navbar-brand {
+  padding: 25px 0;
+  text-align: center;
+  color: #00558C;
+  font-weight: bold;
+}
+
+.name.navbar-brand:hover {
+  color: #00558C;
+}
+
+.name.navbar-brand:focus {
+  color: #00558C;
+}
+
+.navbar-default {
+  background-color: #F4F4F4;
+  border-color: #F4F4F4;
+}
+
+.nav.navbar-nav a {
+  height: 50px;
+  top: 50%;
+  margin-top: -25px;
+}
+
+.nav.navbar-nav li {
+  height: 72px;
+}
+
+.nav.navbar-nav li a {
+  color: #00558C;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+th {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+section .field--label {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.view-search-entities caption,
+.view-taxonomy-term caption {
+  background-color: #A4BCC2;
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #222;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+/*
+ * Icons
+ */
+.path-node.page-node-type-source .page-header,
+.path-node.page-node-type-item .page-header {
+  border-bottom: 0px;
+}
+
+section .block-field-blocknodesourcetype,
+section .block-field-blocknodeitemtype {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+section .block-field-blocknodesourcetype .field--name-type,
+section .block-field-blocknodeitemtype .field--name-type {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+}
+
+/*
+ * SSHOC footer
+ */
+.footer {
+  background-color: #282828;
+  color: #DDD;
+}
+
+#block-sshocfooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+#block-sshocfooter .field--name-body {
+  display: flex;
+  align-items: center;
+}
+
+#block-sshocfooter .eu-flag {
+  padding-right: 1em;
+}
+
+/*
+ * Collections icon
+ */
+.field--name-field-collections .field--name-name {
+  float: left;
+  margin-right: 10px;
+}
+
+/*
+ * comments section
+ */
+.page-node-type-item .block-field-blocknodeitemcomment,
+.page-node-type-source .block-field-blocknodesourcecomment {
+  font-size: 14px;
+}
+
+.block-field-blocknodeitemcomment footer,
+.block-field-blocknodesourcecomment footer {
+  font-size: 12px;
+  color: lightgray;
+}
+
+.block-field-blocknodeitemcomment .links,
+.block-field-blocknodesourcecomment .links {
+  font-size: 12px;
+}
+
+.block-field-blocknodeitemcomment h2,
+.block-field-blocknodesourcecomment h2 {
+  font-size: 20px;
+}
+
+.block-field-blocknodeitemcomment h3,
+.block-field-blocknodesourcecomment h3 {
+  font-size: 16px;
+  margin: 5px 0 0 0;
+}
+
+.block-field-blocknodeitemcomment section,
+.block-field-blocknodesourcecomment section {
+  border-top: 1px solid #AAA;
+}
+
+.block-field-blocknodeitemcomment p,
+.block-field-blocknodesourcecomment p {
+  margin: 5px 0 5px 0;
+}
+
+.block-field-blocknodeitemcomment article,
+.block-field-blocknodesourcecomment article {
+  border-left: 20px solid lightsteelblue;
+  padding-left: 1em;
+}
+
+/*
+ * settings for the search bar
+ */
+#views-exposed-form-search-entities-page-search .form--inline {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid lightgray;
+}
+
+#views-exposed-form-search-entities-page-search .form-item-search {
+  flex: 1 1 auto;
+}
+
+#views-exposed-form-search-entities-page-search .form-item-search .input-group {
+  width: 100%;
+}
+
+#views-exposed-form-search-entities-page-search .form-item-search .input-group .input-group-addon {
+  width: 0;
+}
+
+/*
+ * tables
+ */
+.view-content .table {
+  font-size: 14px;
+}
+
+.view-content .table .views-field-title {
+  width: 33%;
+}
+
+/*
+ * search results
+ */
+.view-search-entities .view-content .table td {
+  font-size: 15px;
+}
+
+.view-search-entities .view-content .table .views-field-title {
+  width: 33%;
+}
+
+/*
+ * autocomplete display view
+ */
+.autocomplete.contextual-region {
+  display: flex;
+  margin-bottom: 5px;
+  border-bottom: 2px solid beige;
+}
+
+.autocomplete h2 {
+  font-size: 16px;
+}
+
+.autocomplete .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.autocomplete .form-item {
+  display: flex;
+  height: 100%;
+}
+
+.autocomplete img {
+  height: 22px;
+  margin-right: 5px;
+}
+
+.autocomplete .material-icons {
+  font-size: 1.2em;
+}
+
+.autocomplete .field {
+  margin-left: 15px;
+}
+
+.autocomplete .content .field--label-inline {
+  display: flex;
+}
+
+.autocomplete .content::before {
+  padding-left: 10px;
+}
+
+.ui-autocomplete a:hover, .ui-autocomplete a:link, .ui-autocomplete a:visited, .ui-autocomplete a:active {
+  color: black;
+}
+
+/*
+ * facets
+ */
+.block-facets {
+  padding: 0 15px 15px 15px;
+  background-color: #FFF;
+  border-left: 1px solid #EEE;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #E1E1E1;
+  margin-bottom: 20px;
+}
+
+.block-facets h3 {
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 10px;
+  background-color: #A4BCC2;
+  text-align: center;
+}
+
+.block-facets .facets-widget-checkbox ul {
+  padding-left: 0;
+}
+
+.block-facets .facets-widget-checkbox li {
+  list-style-type: none;
+  list-style-position: inside;
+  text-indent: -1.5em;
+  padding-left: 1.5em;
+}
+
+.block-facets .facets-widget-checkbox label {
+  display: inline;
+}
+
+.block-facets .facets-dropdown {
+  width: 100%;
+}
+
+.block-facets .facets-checkbox {
+  margin-right: 5px;
+}
+
+/*
+ * Paragraph adaptions
+ */
+.combine-two-elements {
+  display: flex;
+}
+
+.combine-two-elements .field--item {
+  margin-right: 5px;
+}
+
+.combine-two-elements .form-inline label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/*
+ * List "Sources and items"
+ */
+.view-sources.view-display-id-page_sources_and_items .views-field-nid {
+  width: 20%;
+}
+
+.view-sources.view-display-id-page_sources_and_items caption {
+  padding: 10px;
+  font-size: 1.5em;
+  background-color: lightsteelblue;
+}
+
+/*
+ * List "Curator sources"
+ */
+.view-curator-sources .views-field-nid {
+  width: 20%;
+}
+
+.view-curator-sources caption {
+  padding: 10px;
+  font-size: 1.5em;
+  background-color: lightsteelblue;
+  color: #444;
+}
+
+/*
+ * List "Curator sources and items"
+ */
+.view-curator-sources.view-display-id-page_curator_sources_items .view-content {
+  font-size: 2em;
+}
+
+.view-curator-sources.view-display-id-page_curator_sources_items .table {
+  width: 95%;
+  margin-left: 5%;
+}

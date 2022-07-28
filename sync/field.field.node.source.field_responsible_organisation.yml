@@ -1,0 +1,29 @@
+uuid: 6be9ccdd-d53a-4f83-ad69-089b564d658a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_responsible_organisation
+    - node.type.source
+    - taxonomy.vocabulary.organisations
+id: node.source.field_responsible_organisation
+field_name: field_responsible_organisation
+entity_type: node
+bundle: source
+label: 'Responsible organisation'
+description: 'When adding a new organization (any text that does not appear in the drop-down list, please look for a Research Organisation Registry Identifier (ROR) at <a href="https://ror.org/">https://ror.org/</a>. Enter this by searching for the relevant source, then clicking edit on the added organization.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      organisations: organisations
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

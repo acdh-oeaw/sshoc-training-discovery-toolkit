@@ -1,0 +1,25 @@
+uuid: aa4918e0-e9d8-4119-a2cf-8f7290d5f0e8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9bcbb013-deed-4c52-82d3-ae69c1ebd0f9'
+  module:
+    - block_content
+  theme:
+    - bootstrap_inventory
+id: sshoclicense
+theme: bootstrap_inventory
+region: footer
+weight: -10
+provider: null
+plugin: 'block_content:9bcbb013-deed-4c52-82d3-ae69c1ebd0f9'
+settings:
+  id: 'block_content:9bcbb013-deed-4c52-82d3-ae69c1ebd0f9'
+  label: 'SSHOC license'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,15 @@
+uuid: 05c3e427-98bd-4739-86c0-11d18b693bb9
+langcode: en
+status: true
+dependencies: {  }
+name: small_icon
+label: 'Small icon (50x50)'
+effects:
+  49f96fbc-c34c-468b-924d-a8bb71dfeb7d:
+    uuid: 49f96fbc-c34c-468b-924d-a8bb71dfeb7d
+    id: image_scale
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      upscale: false

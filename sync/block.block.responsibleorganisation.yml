@@ -1,0 +1,28 @@
+uuid: 75592214-8108-4b98-a0fd-8e6ec26f9d63
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.responsible_organisation_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap_inventory
+id: responsibleorganisation
+theme: bootstrap_inventory
+region: sidebar_second
+weight: -11
+provider: null
+plugin: 'facet_block:responsible_organisation_taxonomy_term_name'
+settings:
+  id: 'facet_block:responsible_organisation_taxonomy_term_name'
+  label: 'Responsible organisation'
+  label_display: '0'
+  provider: facets
+  block_id: responsibleorganisation
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/entities\r\n/start"

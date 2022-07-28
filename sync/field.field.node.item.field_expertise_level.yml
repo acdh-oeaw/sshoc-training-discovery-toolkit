@@ -1,0 +1,21 @@
+uuid: bbb99a76-bd2b-4835-b7a7-4df64dbf6ef7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_expertise_level
+    - node.type.item
+  module:
+    - options
+id: node.item.field_expertise_level
+field_name: field_expertise_level
+entity_type: node
+bundle: item
+label: 'Expertise level'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,7 @@
+uuid: 3a8a2bc7-902b-4ee1-9917-37ac0942c03b
+langcode: en
+status: true
+dependencies: {  }
+id: node__source
+label: 'Content: Source'
+tags: {  }

@@ -1,0 +1,30 @@
+uuid: 69bb204a-8f4b-48c8-bb56-70ab9387fd45
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_expertise_level
+field_name: field_expertise_level
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: beginner
+      label: beginner
+    -
+      value: intermediate
+      label: intermediate
+    -
+      value: advanced
+      label: advanced
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

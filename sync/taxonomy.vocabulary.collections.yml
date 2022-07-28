@@ -1,0 +1,8 @@
+uuid: ddfd846e-d05a-4e08-a2c7-68c36c903714
+langcode: en
+status: true
+dependencies: {  }
+name: Collections
+vid: collections
+description: 'Different collections to separate the data'
+weight: 0

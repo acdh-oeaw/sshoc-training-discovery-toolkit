@@ -1,0 +1,9 @@
+uuid: eb0577c6-53a4-45a2-ad55-68b41171b12d
+langcode: en
+status: true
+dependencies: {  }
+id: extent
+label: Extent
+icon_uuid: null
+description: 'How much material is available'
+behavior_plugins: {  }

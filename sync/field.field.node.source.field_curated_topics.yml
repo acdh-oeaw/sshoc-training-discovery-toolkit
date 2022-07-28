@@ -1,0 +1,29 @@
+uuid: d43b006c-fef1-4546-9de0-d424cdcc2ac0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_curated_topics
+    - node.type.source
+    - taxonomy.vocabulary.topics_curated
+id: node.source.field_curated_topics
+field_name: field_curated_topics
+entity_type: node
+bundle: source
+label: 'Curated topics'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topics_curated: topics_curated
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

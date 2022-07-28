@@ -1,0 +1,333 @@
+uuid: c25501b4-2b0f-45dc-927c-04ad80e5aa8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.item.body
+    - field.field.node.item.comment
+    - field.field.node.item.field_access_conditions
+    - field.field.node.item.field_accesspoint
+    - field.field.node.item.field_author
+    - field.field.node.item.field_collections
+    - field.field.node.item.field_created
+    - field.field.node.item.field_curated_topics
+    - field.field.node.item.field_disciplines
+    - field.field.node.item.field_expertise_level
+    - field.field.node.item.field_extent_item
+    - field.field.node.item.field_format
+    - field.field.node.item.field_free_access
+    - field.field.node.item.field_intended_audience
+    - field.field.node.item.field_language
+    - field.field.node.item.field_learning_outcomes
+    - field.field.node.item.field_license
+    - field.field.node.item.field_needs_curation
+    - field.field.node.item.field_other_access
+    - field.field.node.item.field_source_of_item
+    - field.field.node.item.field_topics
+    - field.field.node.item.field_updated
+    - node.type.item
+  module:
+    - comment
+    - datetime
+    - field_group
+    - link
+    - paragraphs
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_availability:
+      children:
+        - field_free_access
+        - field_other_access
+        - field_access_conditions
+        - field_license
+        - field_language
+        - field_created
+        - field_updated
+      label: Availability
+      region: content
+      parent_name: ''
+      weight: 7
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_background_information:
+      children:
+        - field_author
+      label: 'Background information'
+      region: content
+      parent_name: ''
+      weight: 8
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_basic_information:
+      children:
+        - field_needs_curation
+        - title
+        - body
+        - field_accesspoint
+        - field_source_of_item
+      label: 'Basic information'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: true
+    group_contextualisation:
+      children:
+        - field_intended_audience
+        - field_expertise_level
+        - field_disciplines
+        - field_format
+        - field_curated_topics
+        - field_topics
+        - field_learning_outcomes
+      label: Contextualisation
+      region: content
+      parent_name: ''
+      weight: 9
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+id: node.item.default
+targetEntityType: node
+bundle: item
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 50
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  comment:
+    type: comment_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_access_conditions:
+    type: text_textfield
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_accesspoint:
+    type: link_default
+    weight: 51
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_author:
+    type: entity_reference_paragraphs
+    weight: 47
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+  field_created:
+    type: datetime_default
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_curated_topics:
+    type: options_buttons
+    weight: 45
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_disciplines:
+    type: entity_reference_autocomplete
+    weight: 43
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_expertise_level:
+    type: options_select
+    weight: 42
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_format:
+    type: options_buttons
+    weight: 44
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_free_access:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_intended_audience:
+    type: options_buttons
+    weight: 41
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_language:
+    type: entity_reference_autocomplete
+    weight: 15
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_learning_outcomes:
+    type: text_textarea
+    weight: 47
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_license:
+    type: entity_reference_autocomplete
+    weight: 14
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_needs_curation:
+    type: boolean_checkbox
+    weight: 48
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_other_access:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_source_of_item:
+    type: entity_reference_autocomplete
+    weight: 52
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_topics:
+    type: entity_reference_autocomplete
+    weight: 46
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_updated:
+    type: datetime_default
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 49
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_collections: true
+  field_extent_item: true

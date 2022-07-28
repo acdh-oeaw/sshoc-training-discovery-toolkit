@@ -1,0 +1,18 @@
+uuid: fdbd65a2-e9cd-4b16-ac90-57d1d1d035cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_needs_curation
+field_name: field_needs_curation
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

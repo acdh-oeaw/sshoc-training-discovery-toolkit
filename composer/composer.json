@@ -1,0 +1,99 @@
+{
+    "name": "drupal/recommended-project",
+    "description": "Project template for Drupal 8 projects with a relocated document root",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "~1.0",
+        "drupal/bootstrap": "^3.21",
+        "drupal/core": "9.4.3 as 8.9.20",
+        "drupal/core-composer-scaffold": "^9.0.0",
+        "drupal/core-project-message": "^9.0.0",
+        "drupal/core-recommended": "^9.0.0",
+        "drupal/ctools": "^3.2",
+        "drupal/entity_reference_revisions": "^1.7",
+        "drupal/facets": "^2.0",
+        "drupal/field_group": "~3.0",
+        "drupal/jquery_ui_accordion": "^1.1",
+        "drupal/matomo": "^1.10",
+        "drupal/metatag": "^1.16",
+        "drupal/migrate_plus": "^5.1",
+        "drupal/migrate_source_csv": "^3.2",
+        "drupal/migrate_tools": "^5.0",
+        "drupal/paragraphs": "^1.10",
+        "drupal/pathauto": "^1.6",
+        "drupal/redirect": "^1.6",
+        "drupal/rest_views": "^2.0",
+        "drupal/schema_metatag": "^2.2",
+        "drupal/search_api": "^1.15",
+        "drupal/search_api_autocomplete": "^1.6",
+        "drupal/search_api_sort_priority": "1.x-dev",
+        "drupal/smtp": "~1.0",
+        "drupal/token": "^1.5",
+        "drupal/upgrade_status": "^3.0",
+        "drupal/views_bulk_operations": "^4.0",
+        "drush/drush": "^10.1"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+	"enable-patching": true,
+        "patches": {
+            "drupal/search_api_sort_priority": {
+                "Drupal 9 compatibility fix": "https://www.drupal.org/files/issues/2020-07-28/d9-readiness-3136197-7.patch"
+            }
+	},
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
+        },
+        "drupal-core-project-message": {
+            "include-keys": ["homepage", "support"],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                         </>",
+                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
+                "<bg=blue;fg=white>                                                         </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+
+                "  * Install the site: https://www.drupal.org/docs/8/install",
+                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+                "  * Get support: https://www.drupal.org/support",
+                "  * Get involved with the Drupal community:",
+                "      https://www.drupal.org/getting-involved",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
+            ]
+        }
+    }
+}

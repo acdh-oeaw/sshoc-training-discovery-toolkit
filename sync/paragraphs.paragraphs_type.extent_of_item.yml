@@ -1,0 +1,9 @@
+uuid: 7dfe839a-1c7f-44c8-a431-e0d05c625948
+langcode: en
+status: true
+dependencies: {  }
+id: extent_of_item
+label: 'Extent of item'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

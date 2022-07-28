@@ -1,0 +1,29 @@
+uuid: 2f50eb72-0667-41e8-bffc-332f3b79ed71
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.disciplines_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap
+id: discipline
+theme: bootstrap
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'facet_block:disciplines_taxonomy_term_name'
+settings:
+  id: 'facet_block:disciplines_taxonomy_term_name'
+  label: Discipline
+  label_display: '0'
+  provider: facets
+  block_id: discipline
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /search-entities

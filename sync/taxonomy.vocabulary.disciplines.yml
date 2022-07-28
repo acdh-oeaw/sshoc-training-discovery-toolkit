@@ -1,0 +1,8 @@
+uuid: bc800b40-55b1-4309-a772-2cc97ca2c56b
+langcode: en
+status: true
+dependencies: {  }
+name: Disciplines
+vid: disciplines
+description: ''
+weight: 0

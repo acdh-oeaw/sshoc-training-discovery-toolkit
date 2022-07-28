@@ -1,0 +1,33 @@
+uuid: 2952906b-43aa-4d55-a128-4ff1abb4075a
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy_patterns
+label: 'Taxonomy patterns'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:vocabulary]/[term:name]'
+selection_criteria:
+  c9623396-6968-4293-98d7-4a30c4c92884:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: c9623396-6968-4293-98d7-4a30c4c92884
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      audiences: audiences
+      collections: collections
+      disciplines: disciplines
+      formats: formats
+      languages: languages
+      licenses: licenses
+      organisations: organisations
+      statuses: statuses
+      tags: tags
+      topics: topics
+      topics_curated: topics_curated
+selection_logic: and
+weight: -5
+relationships: {  }

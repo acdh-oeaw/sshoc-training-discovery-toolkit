@@ -1,0 +1,29 @@
+uuid: f648bef7-f064-49c1-8e19-0d35836519ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_source_of_item
+    - node.type.item
+    - node.type.source
+id: node.item.field_source_of_item
+field_name: field_source_of_item
+entity_type: node
+bundle: item
+label: 'Source of item'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      source: source
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

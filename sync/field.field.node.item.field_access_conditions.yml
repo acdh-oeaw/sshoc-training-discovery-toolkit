@@ -1,0 +1,21 @@
+uuid: 77d84616-7778-4416-9bf3-7f5ee66455a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_access_conditions
+    - node.type.item
+  module:
+    - text
+id: node.item.field_access_conditions
+field_name: field_access_conditions
+entity_type: node
+bundle: item
+label: 'Access conditions'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

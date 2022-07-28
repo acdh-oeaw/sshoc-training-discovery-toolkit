@@ -1,0 +1,19 @@
+uuid: 2a69c318-65a4-4aea-aca7-adcd7dc1a32b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_unit_item
+    - paragraphs.paragraphs_type.extent_of_item
+id: paragraph.extent_of_item.field_unit_item
+field_name: field_unit_item
+entity_type: paragraph
+bundle: extent_of_item
+label: Unit
+description: 'Take the unit and size from the item itself, unit can be ECTS points (use ECTS as unit), Kilobytes (use KB as unit), slides (use slides as unit), etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

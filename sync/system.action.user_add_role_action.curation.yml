@@ -1,0 +1,14 @@
+uuid: d3c3a71a-5690-482d-a33d-36fb74a05135
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.curation
+  module:
+    - user
+id: user_add_role_action.curation
+label: 'Add the Curation role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: curation

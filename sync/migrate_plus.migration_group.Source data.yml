@@ -1,0 +1,10 @@
+uuid: 004d6dc1-ad52-4429-aaa1-a64435e26d7a
+langcode: en
+status: true
+dependencies: {  }
+id: 'Source data'
+label: 'Source data'
+description: ''
+source_type: null
+module: null
+shared_configuration: null

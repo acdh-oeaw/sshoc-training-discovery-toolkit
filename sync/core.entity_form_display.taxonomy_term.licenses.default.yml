@@ -1,0 +1,54 @@
+uuid: bf6efb73-c2eb-4787-aa92-55c51141a6a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.licenses.field_spdx_license
+    - taxonomy.vocabulary.licenses
+  module:
+    - link
+    - path
+    - text
+id: taxonomy_term.licenses.default
+targetEntityType: taxonomy_term
+bundle: licenses
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_spdx_license:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

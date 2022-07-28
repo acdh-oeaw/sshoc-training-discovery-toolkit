@@ -1,0 +1,18 @@
+uuid: c0e64b3a-5a1e-4695-9d59-e5c47f20560d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Item
+type: item
+description: 'An entry from a source about a training material'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

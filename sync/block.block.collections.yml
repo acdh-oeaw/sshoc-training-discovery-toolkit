@@ -1,0 +1,29 @@
+uuid: d5cc4cd6-9560-47be-a765-ace84e21244e
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.collections_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap_inventory
+id: collections
+theme: bootstrap_inventory
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'facet_block:collections_taxonomy_term_name'
+settings:
+  id: 'facet_block:collections_taxonomy_term_name'
+  label: Collections
+  label_display: '0'
+  provider: facets
+  block_id: collections
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/entities\r\n/start\r\n/search-entities-ttt"

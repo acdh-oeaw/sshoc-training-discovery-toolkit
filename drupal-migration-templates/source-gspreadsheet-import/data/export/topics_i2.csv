@@ -1,0 +1,187 @@
+Id,Name,Description
+1,"For SSH","Component Metadata Infrastructure services: basic overview of the Component MetaData Infrastructure (CMDI) service provided by CLARIN. The service provides a framework to describe and reuse metadata blueprints.
+Most of the more detailed material available is geared towards end-user of the Virtual Language Observatory  (VLO)."
+2,"Training on the B2Services",
+3,"Introduction to Research Infrastructures",
+4,"Management Challenges in Research Infrastructures",
+5,"Introduction to Collaborations in Research Infrastructures",
+6,"Manage, Improve and Open Up Your Research Data",
+7,"Formal Ontologies","A Complete Novice’s Guide"
+8,"Digital Humanities Research Questions and Methods",
+9,"Citizen Science in the (Digital) arts and Humanities",
+10,"eHeritage Webinars",
+11,"343 events",
+12,"1285 materials",
+13,Course,"Introduction to digital humanities
+Text encoding and the TEI
+Digital Scholarly Editions: Manuascripts, Texts and TEI Encoding
+Multimodal Literaries
+Sound studies
+Digitizing Dictionaries"
+14,Workshop,"Spatial Image Analytics
+an introduction to Conceptual Modelling
+Jupyter Notebooks"
+15,"Data Management Expert Guide","to help social science researchers make their research data FAIR."
+16,"Discovering and using data",
+17,"Managing research data",
+18,"Preserving data and using CESSDA's tools and services",
+19,"An RDM Handbook",
+20,"RDM support",
+21,"Overview Digital Humanities Courses at universities - Course, Bachelor or Master programme","https://registries.clarin-dariah.eu/courses/  All over the world, mostly Europe."
+22,"Many topics",
+23,"TeLeMaCo stands for Teaching ","and Learning Materials Collection. It is a collaborative portal for all kind of training and teaching materials relevant to linguistics and digital humanities."
+24,"Topics are","Data analysis"
+25,"Data Visualization",
+26,Culture,
+27,History,
+28,"Online course","Wrangling
+Linear Regression
+Capstone
+R Basics
+Visualization
+Probability
+Inference and Modeling
+Productivity tools
+Data Mining for business"
+29,"Online courses on Culture eg. China",
+30,"Online History Courses",
+31,"The range of described ","materials includes quickstarts, FAQs, technical documentation and user documentation for tools, small teaching modules and even entire courses. They can be of any kind of digital media, including text, image, audio, video, and interactive training."
+32,APIS,
+33,Python,
+34,"Data Management",
+35,"Data Manipulation",
+36,"Distant reading",
+37,"Set up e.g. introduction to the Bash Commandline",
+38,"Linked open data",
+39,Mapping,
+40,"Networked analysis",
+41,"Web scraping",
+42,"Digital publishing",
+43,"The Unix Shell",
+44,"version control with grid",
+45,"Programming with python",
+46,"Programming with R",
+47,"R for Reproducible Scientific Analysis",
+48,"Introduction to Data",
+49,OpenRefine,
+50,"Introduction to Git",
+51,"Tidy Data",
+52,SQL,
+53,Webscraping,
+54,"Introduction to Python",
+55,"Introduction to data for archivists",
+56,Pilot,"Top 10 FAIR Data & Software things https://librarycarpentry.org/Top-10-FAIR/"
+57,"Ecology curriculum",
+58,"Genomics curriculum",
+59,"Social Sciences curriculum",
+60,"Geospatial data curriculum",
+61,"augmented reality",
+62,"data modeling",
+63,DH,
+64,"editing tools",
+65,eHeritage,
+66,feminism,
+67,lexicography,
+68,literacies,
+69,MOOC,
+70,multimodality,
+71,ontologies,
+72,"research infrastructures",
+73,"scholarly editions",
+74,"scholarly publishing",
+75,"sound studies",
+76,"speech technology",
+77,XML,
+78,XSLT,
+79,"open access",
+80,"open education",
+81,"open science",
+82,"citizen science",
+83,"data visualisation",
+84,"spatial humanities",
+85,geotagging,
+86,TEI,
+87,"It can be blog ","posts, reports, presentations, working papers, data papers, articles, book chapters, video or podcasts. It is not a problem if a content is already highlighted on another platform. Content with persistent identifiers (uri, handle, doi) are of course more than welcome.
+All selected content has to be: - already published elsewhere.
+    - an Open Access content/data."
+88,"For example","Analysis, Digital Humanities, English, Machine Learning, Modeling, Research Activities, Sentiment Analysis, Structural Analysis, Tools
+
+Tagged: Computational linguistics, Google Books, logistic regression, machine learning, Natural language processing, neural networks, science fiction, sentiment analysis, Text Categorization, Text Classification"
+89,"Ted Underwood tests a ","new language representation model called “Bidirectional Encoder Representations from Transformers” (BERT) and asks if humanists should use it."
+90,"Digital humanists looking for ","tools in order to visualize and analyze texts can rely on ‘Voyant Tools’. Available at https: //voyant-tools.org/, a software package. Online resources are available in order to learn how to use Voyant."
+91,"Article introducing TEIdown, an ","extension of the Markdown syntax that aims at creating XML-TEI documents, and transformation programs."
+92,"Named Entity Recognition (NER) ","is used to identify textual elements that gives things a name. In this study, four different NER tools are evaluated using a corpus of modern and classic fantasy or science fiction novels."
+93,"The FAIR Data Principles ","(Findable, Accesible, Interoperable, Reusable) aim to make clear the need to improve the infrastructure for reuse of scholarly data."
+94,"More topics",
+95,"Fundamentals, introduction to machine learning",
+96,"Essentials of Python",
+97,"Foundational mathematics",
+98,Etcetera,
+99,"ACDH Matterrmost / Communication",
+100,"Transkribus and XSTL - Digitazation",
+101,"Hashtags - Twitter analysis",
+102,Glaser-TEI,
+103,Django,
+104,Git,
+105,"Karma - RDF",
+106,"Digital edition",
+107,"Pandas Tutorial",
+108,"Tutorials for DH Tools and Methods","many, many topics"
+109,"General or Omnibus Technical Tutorials",
+110,"Code Versioning Systems (Git + Github) Tutorials (for project development)",
+111,"Command Line Tutorials",
+112,"Content Management Systems Tutorials",
+113,"Curation Tutorials (and Guides to Citing Datasets)",
+114,"Data Science Tutorials",
+115,"and many more",
+116,"Online course in Holocaust Studies","With this growing resource, we want to provide teachers, lecturers and students with source material and background information in order to give them an overview on recent trends in historiography. Five overarching topics have been developed for the online course. Each of these topics is used to focus on a critical analysis of sources within the context of the current state and methods of Holocaust research."
+117,"Interactive EHRI Online Course in Holocaust Studies","consists of an introduction and six thematic units. The Online Course is aimed at the graduate level (i.e. those holding a BA-degree or higher qualification) and offers a unique opportunity for scholars from a variety of disciplines (historians, sociologists, psychologists, anthropologists and others interested in the Holocaust) as well as archivists working in fields connected with historical archival research."
+118,"All ESS training courses are now administered by the SERISS project",
+119,"Several tools have been ","developed during the project to provide training on data management, data handling and harmonisation, as well as on statistical analysis to a wider social science community. By sharing resources and skills, the project has delivered training materials in a more cost-effective and comprehensive way than would have been possible as individual infrastructures."
+120,"Webinars Data management",
+121,"SERISS lectures on data handling and harmonization on YouTube",
+122,"face to face courses","aimed at secondary users of survey data. These courses aimed to equip researchers with the skills and knowledge they need to analyse survey data"
+123,"easySHARE is a simplified ","HRS-adapted dataset for student training, and for researchers who have little experience in quantitative analyses of complex survey data."
+124,Webinars,"LIBER regularly runs free webinars on important topics such as Research Data Management.
+LIBER regularly runs free webinars on important topics such as  Copyright.
+LIBER regularly runs free webinars on important topics such as Open Access."
+125,"instructor training",
+126,lessons,
+127,didactics,
+128,"workshop outlines",
+129,"Examples + exercises",
+130,"Lectures on e.g. corpus compilation",
+131,"Trustworthy Digital Repositories",
+132,report,
+133,courses,
+134,"training good practices",
+135,resources,
+136,tools,
+137,games,
+138,"handbook for trainers",
+139,guides,
+140,slides,
+141,video,
+142,modules,
+143,Overview,
+144,Tutorials,
+145,examples,
+146,"video clips",
+147,exercises,
+148,guidelines,
+149,Game,
+150,books,
+151,infographics,
+152,guide,
+153,presentations,
+154,"tools and templates",
+155,videos,
+156,"Manually curated language resource overviews, curated by discipline",
+157,"Long time archiving of language resources and tools",
+158,Presentation,
+159,"Research Data Management",
+160,"Best pactice",
+161,"Soft Skills for effective training",
+162,"Ice breakers and engagement exercises",
+163,"Resources to use during the training (i.e. evaluation)",
+164,"practical guidance on the organisation of trainings",

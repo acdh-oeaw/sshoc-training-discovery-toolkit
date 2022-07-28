@@ -1,0 +1,19 @@
+uuid: c3bc8cc8-b5b1-4394-bb5f-36e3337b1d40
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - taxonomy
+id: taxonomy_term.field_accesspoint
+field_name: field_accesspoint
+entity_type: taxonomy_term
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

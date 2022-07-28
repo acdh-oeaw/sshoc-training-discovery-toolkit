@@ -1,0 +1,29 @@
+uuid: 879db009-1cb6-4d22-bf0d-7a6386e2ac67
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.language_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap_inventory
+id: bootstrap_inventory_languagetaxonomytermname
+theme: bootstrap_inventory
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'facet_block:language_taxonomy_term_name'
+settings:
+  id: 'facet_block:language_taxonomy_term_name'
+  label: Language
+  label_display: '0'
+  provider: facets
+  block_id: bootstrap_inventory_languagetaxonomytermname
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/entities\r\n/start"

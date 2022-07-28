@@ -1,0 +1,33 @@
+uuid: ed785840-bd9c-4f5e-8c81-f1840e52fdd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_unit
+    - paragraphs.paragraphs_type.extent
+    - taxonomy.vocabulary.formats
+  content:
+    - 'taxonomy_term:formats:bb117443-0080-4065-b975-a61483348e5a'
+id: paragraph.extent.field_unit
+field_name: field_unit
+entity_type: paragraph
+bundle: extent
+label: Unit
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: bb117443-0080-4065-b975-a61483348e5a
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      formats: formats
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

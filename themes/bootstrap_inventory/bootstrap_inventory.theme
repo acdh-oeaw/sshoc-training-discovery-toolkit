@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/*
+ * preprocess changes
+ */
+function bootstrap_inventory_preprocess(&$variables, $hook) {
+  $variables['base_path'] = base_path();
+}
+
+/*
+ * searchbox is in a view_exposed_form
+ *   add here for search the placeholder
+ */
+function bootstrap_inventory_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (isset($form['search'])) {
+    $form['search']['#attributes']['placeholder'] = t('Search for sources and items');
+  }
+}
+

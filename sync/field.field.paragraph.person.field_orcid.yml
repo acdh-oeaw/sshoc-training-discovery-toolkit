@@ -1,0 +1,19 @@
+uuid: e7525889-19e5-41e6-80e5-e360ccfaba36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_orcid
+    - paragraphs.paragraphs_type.person
+id: paragraph.person.field_orcid
+field_name: field_orcid
+entity_type: paragraph
+bundle: person
+label: ORCID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

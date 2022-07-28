@@ -1,0 +1,8 @@
+uuid: c1c2fe3e-e55f-4997-a331-27bc9fe8442a
+langcode: en
+status: true
+dependencies: {  }
+name: Organisations
+vid: organisations
+description: 'Responsible for sources'
+weight: 0

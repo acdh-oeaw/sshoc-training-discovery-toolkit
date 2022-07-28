@@ -1,0 +1,8 @@
+uuid: 4b1bcef2-e261-49a3-bfdd-e71262ae5273
+langcode: en
+status: true
+dependencies: {  }
+name: Topics
+vid: topics
+description: 'Topics that are addressed by a resource'
+weight: 0

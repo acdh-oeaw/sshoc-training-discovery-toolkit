@@ -1,0 +1,29 @@
+uuid: 5d1e0c8d-d437-4fd7-989c-409e4ec984a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.intended_audience_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap
+id: intendedaudience
+theme: bootstrap
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'facet_block:intended_audience_taxonomy_term_name'
+settings:
+  id: 'facet_block:intended_audience_taxonomy_term_name'
+  label: 'Intended audience'
+  label_display: '0'
+  provider: facets
+  block_id: intendedaudience
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /search-entities

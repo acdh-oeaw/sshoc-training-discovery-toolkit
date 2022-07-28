@@ -1,0 +1,17 @@
+uuid: a775b4aa-938b-4cc8-808a-8f66672deb34
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: inventory_database
+name: 'Inventory Database'
+description: 'Database based search for the inventory'
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: partial
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

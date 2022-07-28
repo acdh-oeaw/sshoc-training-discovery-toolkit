@@ -1,0 +1,3 @@
+services:
+  training_curation.term_manage:
+    class: Drupal\training_curation\TermManage

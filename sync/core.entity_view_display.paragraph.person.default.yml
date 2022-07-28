@@ -1,0 +1,54 @@
+uuid: 20e24764-b91e-4c6f-a5ea-6799c50dd243
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.person.field_email
+    - field.field.paragraph.person.field_full_name
+    - field.field.paragraph.person.field_link
+    - field.field.paragraph.person.field_orcid
+    - paragraphs.paragraphs_type.person
+  module:
+    - link
+id: paragraph.person.default
+targetEntityType: paragraph
+bundle: person
+mode: default
+content:
+  field_email:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_full_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_orcid:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

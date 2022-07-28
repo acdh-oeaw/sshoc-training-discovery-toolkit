@@ -1,0 +1,25 @@
+uuid: ef88e038-e42c-428f-9590-adff3cd2aae6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c85b202a-b6ea-4ce1-a95b-ffabf841cd84'
+  module:
+    - block_content
+  theme:
+    - bootstrap_inventory
+id: sshocfooter
+theme: bootstrap_inventory
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:c85b202a-b6ea-4ce1-a95b-ffabf841cd84'
+settings:
+  id: 'block_content:c85b202a-b6ea-4ce1-a95b-ffabf841cd84'
+  label: 'SSHOC footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

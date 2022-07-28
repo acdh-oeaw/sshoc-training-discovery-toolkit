@@ -1,0 +1,8 @@
+uuid: a18d28d1-01b7-4196-87ac-22657d12ab8e
+langcode: en
+status: true
+dependencies: {  }
+name: Statuses
+vid: statuses
+description: 'Status of a resource'
+weight: 0

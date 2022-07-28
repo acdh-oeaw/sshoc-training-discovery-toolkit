@@ -1,0 +1,29 @@
+uuid: 0aa99e7b-59d8-4159-b1ca-9b2ff16e5a7c
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.topics_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap_inventory
+id: bootstrap_inventory_topic
+theme: bootstrap_inventory
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'facet_block:topics_taxonomy_term_name'
+settings:
+  id: 'facet_block:topics_taxonomy_term_name'
+  label: Topic
+  label_display: '0'
+  provider: facets
+  block_id: bootstrap_inventory_topic
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/entities\r\n/start"

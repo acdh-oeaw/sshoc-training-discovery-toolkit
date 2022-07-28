@@ -1,0 +1,21 @@
+uuid: 4b026ff5-a748-40d7-846f-c46bf0c84216
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_harvesting
+    - node.type.source
+  module:
+    - text
+id: node.source.field_harvesting
+field_name: field_harvesting
+entity_type: node
+bundle: source
+label: Harvesting
+description: 'Please deliver here information on options to harvest the content of the source, e.g. is there an API and if yes, please add the link to the API endpoint and the documentation of the API.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

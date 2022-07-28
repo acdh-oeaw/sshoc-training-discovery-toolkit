@@ -1,0 +1,11 @@
+entity_type_groups:
+  node:
+    item:
+      basic: basic
+      advanced: advanced
+      schema_course: schema_course
+    source:
+      basic: basic
+      advanced: advanced
+      dublin_core: dublin_core
+      dublin_core_advanced: dublin_core_advanced

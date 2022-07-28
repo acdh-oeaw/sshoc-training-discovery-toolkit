@@ -1,0 +1,14 @@
+training_curation.merge_terms:
+  path: '/training-curation/merge-terms'
+  defaults:
+    _form: 'Drupal\training_curation\Form\MergeTermsMultistepChooseForm'
+    _title: 'Move or copy the term of a node to another term.'
+  requirements:
+    _permission: 'administer nodes'
+training_curation.merge_terms_overview:
+  path: '/training-curation/merge-terms-overview'
+  defaults:
+    _form: 'Drupal\training_curation\Form\MergeTermsMultistepOverviewForm'
+    _title: 'Overview of the involved nodes to a search term.'
+  requirements:
+    _permission: 'administer nodes'

@@ -1,0 +1,65 @@
+uuid: cec54ff5-e1bb-44df-8e5d-a0af536ad1f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.organisations.field_accesspoint
+    - field.field.taxonomy_term.organisations.field_ror_id
+    - taxonomy.vocabulary.organisations
+  module:
+    - field_group
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_references:
+      children:
+        - field_accesspoint
+        - field_ror_id
+      label: References
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+id: taxonomy_term.organisations.default
+targetEntityType: taxonomy_term
+bundle: organisations
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_accesspoint:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_ror_id:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  search_api_excerpt: true

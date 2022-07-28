@@ -1,0 +1,55 @@
+uuid: d6723d22-9ab0-455a-a2b1-d43c83339611
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.extent_of_item.field_size
+    - field.field.paragraph.extent_of_item.field_unit_item
+    - paragraphs.paragraphs_type.extent_of_item
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_combine:
+      children:
+        - field_size
+        - field_unit_item
+      label: Combine
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: combine-two-elements
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+id: paragraph.extent_of_item.default
+targetEntityType: paragraph
+bundle: extent_of_item
+mode: default
+content:
+  field_size:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: '(estimated) number'
+    third_party_settings: {  }
+  field_unit_item:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

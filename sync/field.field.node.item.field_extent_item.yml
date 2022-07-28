@@ -1,0 +1,40 @@
+uuid: 01f3ceb3-464a-4869-a15c-a26d3eb8aac4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extent_item
+    - node.type.item
+    - paragraphs.paragraphs_type.extent_of_item
+  module:
+    - entity_reference_revisions
+id: node.item.field_extent_item
+field_name: field_extent_item
+entity_type: node
+bundle: item
+label: Extent
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      extent_of_item: extent_of_item
+    negate: 0
+    target_bundles_drag_drop:
+      extent:
+        weight: 5
+        enabled: false
+      extent_of_item:
+        weight: 6
+        enabled: true
+      person:
+        weight: 7
+        enabled: false
+      source:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

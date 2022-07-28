@@ -1,0 +1,73 @@
+uuid: 6e0919ff-55ed-4181-b8a4-3d33a88112a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.source.body
+    - field.field.node.source.comment
+    - field.field.node.source.field_access_conditions
+    - field.field.node.source.field_accesspoints
+    - field.field.node.source.field_collections
+    - field.field.node.source.field_contact
+    - field.field.node.source.field_created
+    - field.field.node.source.field_curated_topics
+    - field.field.node.source.field_curator
+    - field.field.node.source.field_disciplines
+    - field.field.node.source.field_extent
+    - field.field.node.source.field_format
+    - field.field.node.source.field_harvesting
+    - field.field.node.source.field_intended_audience
+    - field.field.node.source.field_language
+    - field.field.node.source.field_license
+    - field.field.node.source.field_lifetime
+    - field.field.node.source.field_responsible_organisation
+    - field.field.node.source.field_status
+    - field.field.node.source.field_topics
+    - field.field.node.source.field_updated
+    - field.field.node.source.layout_builder__layout
+    - node.type.source
+  module:
+    - text
+    - user
+id: node.source.teaser
+targetEntityType: node
+bundle: source
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment: true
+  field_access_conditions: true
+  field_accesspoints: true
+  field_collections: true
+  field_contact: true
+  field_created: true
+  field_curated_topics: true
+  field_curator: true
+  field_disciplines: true
+  field_extent: true
+  field_format: true
+  field_harvesting: true
+  field_intended_audience: true
+  field_language: true
+  field_license: true
+  field_lifetime: true
+  field_responsible_organisation: true
+  field_status: true
+  field_topics: true
+  field_updated: true
+  layout_builder__layout: true
+  search_api_excerpt: true

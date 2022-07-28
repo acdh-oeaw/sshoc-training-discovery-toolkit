@@ -1,0 +1,29 @@
+uuid: 00b21049-96a7-4d32-b425-5e99a3f653a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.intended_audience_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap_inventory
+id: bootstrap_inventory_intendedaudience
+theme: bootstrap_inventory
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'facet_block:intended_audience_taxonomy_term_name'
+settings:
+  id: 'facet_block:intended_audience_taxonomy_term_name'
+  label: 'Intended audience'
+  label_display: '0'
+  provider: facets
+  block_id: bootstrap_inventory_intendedaudience
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/entities\r\n/start"

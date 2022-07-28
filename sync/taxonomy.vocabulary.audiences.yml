@@ -1,0 +1,8 @@
+uuid: 41537216-4be8-459a-9daf-6e104df83342
+langcode: en
+status: true
+dependencies: {  }
+name: Audiences
+vid: audiences
+description: 'Which audiences are addressed by a resource?'
+weight: 0

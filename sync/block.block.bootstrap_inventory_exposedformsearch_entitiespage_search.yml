@@ -1,0 +1,29 @@
+uuid: f801fda4-f1ad-442b-b8df-b3cf7a3b251b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_entities
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_inventory
+id: bootstrap_inventory_exposedformsearch_entitiespage_search
+theme: bootstrap_inventory
+region: header
+weight: -9
+provider: null
+plugin: 'views_exposed_filter_block:search_entities-page_search'
+settings:
+  id: 'views_exposed_filter_block:search_entities-page_search'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '/admin/*'

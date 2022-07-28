@@ -1,0 +1,30 @@
+uuid: f9870899-dc30-49a7-a4bb-249aad03d5e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.source.field_relation
+    - field.field.paragraph.source.field_source
+    - paragraphs.paragraphs_type.source
+id: paragraph.source.default
+targetEntityType: paragraph
+bundle: source
+mode: default
+content:
+  field_relation:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_source:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

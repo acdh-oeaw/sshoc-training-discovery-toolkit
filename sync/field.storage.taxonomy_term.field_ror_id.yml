@@ -1,0 +1,19 @@
+uuid: 7706f37b-158a-41bf-98fb-68792d573c78
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - taxonomy
+id: taxonomy_term.field_ror_id
+field_name: field_ror_id
+entity_type: taxonomy_term
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

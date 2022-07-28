@@ -1,0 +1,29 @@
+uuid: a3611f99-4f3d-4fab-bc04-66690e32febd
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.source_of_item_content_title
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap_inventory
+id: sourceofitem
+theme: bootstrap_inventory
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'facet_block:source_of_item_content_title'
+settings:
+  id: 'facet_block:source_of_item_content_title'
+  label: 'Source of item'
+  label_display: '0'
+  provider: facets
+  block_id: sourceofitem
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/entities\r\n/start"

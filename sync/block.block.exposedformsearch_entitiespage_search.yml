@@ -1,0 +1,29 @@
+uuid: 74c546e3-8fb7-476d-9201-58007b9514df
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_entities
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: exposedformsearch_entitiespage_search
+theme: bootstrap
+region: header
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search_entities-page_search'
+settings:
+  id: 'views_exposed_filter_block:search_entities-page_search'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '/admin/*'

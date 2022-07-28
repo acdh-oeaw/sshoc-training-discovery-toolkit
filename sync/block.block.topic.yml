@@ -1,0 +1,29 @@
+uuid: 0ff69e82-610c-4fb8-958f-4fa25202e350
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.topics_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap
+id: topic
+theme: bootstrap
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'facet_block:topics_taxonomy_term_name'
+settings:
+  id: 'facet_block:topics_taxonomy_term_name'
+  label: Topic
+  label_display: '0'
+  provider: facets
+  block_id: topic
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /search-entities

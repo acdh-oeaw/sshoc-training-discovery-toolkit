@@ -1,0 +1,22 @@
+uuid: 7cdd6d4c-7f9d-4db2-ade7-3c2b3494015d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrap_inventory
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: bootstrap_inventory_local_tasks
+theme: bootstrap_inventory
+region: header
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

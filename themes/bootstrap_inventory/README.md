@@ -1,0 +1,1 @@
+To use it, deploy it on themes/custom/bootstrap_inventory

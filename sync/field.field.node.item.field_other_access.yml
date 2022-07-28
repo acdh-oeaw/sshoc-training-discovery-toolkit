@@ -1,0 +1,19 @@
+uuid: f5c067f8-8647-4fca-9614-da284803bff6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other_access
+    - node.type.item
+id: node.item.field_other_access
+field_name: field_other_access
+entity_type: node
+bundle: item
+label: 'Other access'
+description: 'Please explain if you choose for the field "Free access" the value "Other" '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

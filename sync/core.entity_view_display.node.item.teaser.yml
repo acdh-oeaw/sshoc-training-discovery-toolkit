@@ -1,0 +1,73 @@
+uuid: 188f6af6-3f7e-4cd4-b8ce-baa6bc6ac2f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.item.body
+    - field.field.node.item.comment
+    - field.field.node.item.field_access_conditions
+    - field.field.node.item.field_accesspoint
+    - field.field.node.item.field_author
+    - field.field.node.item.field_collections
+    - field.field.node.item.field_created
+    - field.field.node.item.field_curated_topics
+    - field.field.node.item.field_disciplines
+    - field.field.node.item.field_expertise_level
+    - field.field.node.item.field_extent_item
+    - field.field.node.item.field_format
+    - field.field.node.item.field_free_access
+    - field.field.node.item.field_intended_audience
+    - field.field.node.item.field_language
+    - field.field.node.item.field_learning_outcomes
+    - field.field.node.item.field_license
+    - field.field.node.item.field_needs_curation
+    - field.field.node.item.field_other_access
+    - field.field.node.item.field_source_of_item
+    - field.field.node.item.field_topics
+    - field.field.node.item.field_updated
+    - node.type.item
+  module:
+    - text
+    - user
+id: node.item.teaser
+targetEntityType: node
+bundle: item
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment: true
+  field_access_conditions: true
+  field_accesspoint: true
+  field_author: true
+  field_collections: true
+  field_created: true
+  field_curated_topics: true
+  field_disciplines: true
+  field_expertise_level: true
+  field_extent_item: true
+  field_format: true
+  field_free_access: true
+  field_intended_audience: true
+  field_language: true
+  field_learning_outcomes: true
+  field_license: true
+  field_needs_curation: true
+  field_other_access: true
+  field_source_of_item: true
+  field_topics: true
+  field_updated: true
+  search_api_excerpt: true

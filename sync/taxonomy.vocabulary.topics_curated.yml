@@ -1,0 +1,8 @@
+uuid: c028ab43-3b1e-4846-8d91-b344d2e1b68b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Topics (curated)'
+vid: topics_curated
+description: 'Curated topics (controlled vocabulary)'
+weight: 0

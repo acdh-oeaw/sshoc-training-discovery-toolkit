@@ -1,0 +1,20 @@
+uuid: 5fcb263d-b7ab-4d65-b292-ed271c9548b0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrap_inventory
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: bootstrap_inventory_page_title
+theme: bootstrap_inventory
+region: header
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

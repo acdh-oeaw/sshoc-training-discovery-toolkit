@@ -1,0 +1,29 @@
+uuid: df968087-95fa-46ef-96c7-55e4aa260f6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disciplines
+    - node.type.item
+    - taxonomy.vocabulary.disciplines
+id: node.item.field_disciplines
+field_name: field_disciplines
+entity_type: node
+bundle: item
+label: Disciplines
+description: 'Try to look for a discipline and use the preferred term label from this list: <a href="https://vocabs.acdh.oeaw.ac.at/oefos/en/page/?uri=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Foefosdisciplines%2F5">https://vocabs.acdh.oeaw.ac.at/oefosdisciplines/5</a>'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      disciplines: disciplines
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

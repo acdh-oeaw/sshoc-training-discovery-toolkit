@@ -1,0 +1,216 @@
+uuid: 6333d5e7-1bee-4c2a-8fe3-d8a573a78149
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intended_audience
+    - field.storage.node.body
+    - field.storage.node.field_collections
+    - field.storage.node.field_curated_topics
+    - field.storage.node.field_disciplines
+    - field.storage.node.field_format
+    - field.storage.node.field_language
+    - field.storage.node.field_responsible_organisation
+    - field.storage.node.field_source_of_item
+    - field.storage.node.field_topics
+    - search_api.server.inventory_database
+  module:
+    - taxonomy
+    - node
+    - search_api
+    - search_api_sort_priority
+id: content_entities
+name: 'Content entities'
+description: ''
+read_only: false
+field_settings:
+  audience_term:
+    label: 'Intended audience » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_intended_audience:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_intended_audience
+      module:
+        - taxonomy
+  body:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  collections_name:
+    label: 'Collections » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_collections:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_collections
+      module:
+        - taxonomy
+  contentbundle_weight:
+    label: 'Sort Priority by Content Bundle'
+    property_path: contentbundle_weight
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  curated_topic_name:
+    label: 'Curated topics » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_curated_topics:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_curated_topics
+      module:
+        - taxonomy
+  discipline_name:
+    label: 'Disciplines » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_disciplines:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_disciplines
+      module:
+        - taxonomy
+  format_name:
+    label: 'Format » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_format:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_format
+      module:
+        - taxonomy
+  language_term:
+    label: 'Language » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_language:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_language
+      module:
+        - taxonomy
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  organisation_name:
+    label: 'Responsible organisation » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_responsible_organisation:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_responsible_organisation
+      module:
+        - taxonomy
+  source_title:
+    label: 'Source of item » Content » Title'
+    datasource_id: 'entity:node'
+    property_path: 'field_source_of_item:entity:title'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_source_of_item
+      module:
+        - node
+  status:
+    label: null
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+  topic_term:
+    label: 'Topics » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_topics:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_topics
+      module:
+        - taxonomy
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+  uid:
+    label: null
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - item
+        - source
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  contentbundle:
+    sorttable:
+      item:
+        weight: '-10'
+      source:
+        weight: '-9'
+    weight: 0
+  entity_status: {  }
+  ignorecase:
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+    all_fields: false
+    fields:
+      - body
+      - title
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: inventory_database

@@ -1,0 +1,23 @@
+uuid: a1f93450-7184-4714-8495-f525c8bd420f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ror_id
+    - taxonomy.vocabulary.organisations
+  module:
+    - link
+id: taxonomy_term.organisations.field_ror_id
+field_name: field_ror_id
+entity_type: taxonomy_term
+bundle: organisations
+label: 'ROR ID'
+description: "Search for the organisation at: https://ror.org/\r\nIf found, take the ROR ID (that is the URL starting with https://ror.org/...) and paste it into this field."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

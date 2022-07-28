@@ -1,0 +1,31 @@
+uuid: 9ee641c4-68f9-470d-94c6-281e7266869f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact
+    - node.type.source
+    - paragraphs.paragraphs_type.person
+  module:
+    - entity_reference_revisions
+id: node.source.field_contact
+field_name: field_contact
+entity_type: node
+bundle: source
+label: Contact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      person: person
+    negate: 0
+    target_bundles_drag_drop:
+      person:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

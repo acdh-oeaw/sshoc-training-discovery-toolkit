@@ -1,0 +1,86 @@
+uuid: ff45c7d0-7554-49ac-8de4-f378a1cd3953
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.item
+    - node.type.page
+    - node.type.source
+    - taxonomy.vocabulary.audiences
+    - taxonomy.vocabulary.disciplines
+    - taxonomy.vocabulary.formats
+    - taxonomy.vocabulary.languages
+    - taxonomy.vocabulary.licenses
+    - taxonomy.vocabulary.organisations
+    - taxonomy.vocabulary.statuses
+    - taxonomy.vocabulary.topics
+    - taxonomy.vocabulary.topics_curated
+  module:
+    - comment
+    - contextual
+    - node
+    - quickedit
+    - system
+    - taxonomy
+    - toolbar
+id: moderation
+label: Moderation
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access in-place editing'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer comments'
+  - 'create item content'
+  - 'create source content'
+  - 'create terms in audiences'
+  - 'create terms in disciplines'
+  - 'create terms in formats'
+  - 'create terms in languages'
+  - 'create terms in licenses'
+  - 'create terms in organisations'
+  - 'create terms in statuses'
+  - 'create terms in topics'
+  - 'create terms in topics_curated'
+  - 'delete any item content'
+  - 'delete any source content'
+  - 'delete own item content'
+  - 'delete own source content'
+  - 'delete terms in audiences'
+  - 'delete terms in disciplines'
+  - 'delete terms in formats'
+  - 'delete terms in languages'
+  - 'delete terms in licenses'
+  - 'delete terms in organisations'
+  - 'delete terms in statuses'
+  - 'delete terms in topics'
+  - 'delete terms in topics_curated'
+  - 'edit any article content'
+  - 'edit any item content'
+  - 'edit any page content'
+  - 'edit any source content'
+  - 'edit own article content'
+  - 'edit own item content'
+  - 'edit own page content'
+  - 'edit own source content'
+  - 'edit terms in audiences'
+  - 'edit terms in disciplines'
+  - 'edit terms in formats'
+  - 'edit terms in languages'
+  - 'edit terms in licenses'
+  - 'edit terms in organisations'
+  - 'edit terms in statuses'
+  - 'edit terms in topics'
+  - 'edit terms in topics_curated'
+  - 'revert source revisions'
+  - 'view article revisions'
+  - 'view item revisions'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view source revisions'
+  - 'view the administration theme'

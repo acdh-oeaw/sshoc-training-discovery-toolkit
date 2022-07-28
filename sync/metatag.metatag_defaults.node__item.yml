@@ -1,0 +1,10 @@
+uuid: a1e3141d-eb26-425d-ac30-3e0da66b2139
+langcode: en
+status: true
+dependencies: {  }
+id: node__item
+label: 'Content: Item'
+tags:
+  schema_course_description: '[node:body]'
+  schema_course_name: '[node:title]'
+  schema_course_type: Course

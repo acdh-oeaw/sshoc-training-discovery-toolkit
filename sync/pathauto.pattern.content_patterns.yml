@@ -1,0 +1,25 @@
+uuid: f64f093c-8037-4aca-ab47-5987edee5253
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_patterns
+label: 'Content patterns'
+type: 'canonical_entities:node'
+pattern: '[node:content-type:machine-name]/[node:nid]'
+selection_criteria:
+  cd623a3b-e5f4-4698-8c76-6180ec69a859:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: cd623a3b-e5f4-4698-8c76-6180ec69a859
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      item: item
+      page: page
+      source: source
+selection_logic: and
+weight: -5
+relationships: {  }

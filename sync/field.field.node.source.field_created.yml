@@ -1,0 +1,21 @@
+uuid: b37aa8e6-3a1b-4bc5-9b66-c20cb18f656d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_created
+    - node.type.source
+  module:
+    - datetime
+id: node.source.field_created
+field_name: field_created
+entity_type: node
+bundle: source
+label: Created
+description: 'Enter the date of the creation of the source (if available). If only the year is known add 1. for day and month, e.g. only the year 2010 is known, enter 1.1.2010 in the date field.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

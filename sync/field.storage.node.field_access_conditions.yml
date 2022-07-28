@@ -1,0 +1,20 @@
+uuid: 98201cd9-acca-4234-b687-142f7d1f384f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_access_conditions
+field_name: field_access_conditions
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

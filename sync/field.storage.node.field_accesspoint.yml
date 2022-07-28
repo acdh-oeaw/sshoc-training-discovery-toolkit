@@ -1,0 +1,19 @@
+uuid: 2491ac9a-1735-4ca7-ab62-105170339410
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_accesspoint
+field_name: field_accesspoint
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

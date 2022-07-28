@@ -1,0 +1,29 @@
+uuid: 1bbf77ad-865d-4569-9737-7d7b7bdfe9c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.disciplines_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - bootstrap_inventory
+id: bootstrap_inventory_discipline
+theme: bootstrap_inventory
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'facet_block:disciplines_taxonomy_term_name'
+settings:
+  id: 'facet_block:disciplines_taxonomy_term_name'
+  label: Discipline
+  label_display: '0'
+  provider: facets
+  block_id: bootstrap_inventory_discipline
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/entities\r\n/start"

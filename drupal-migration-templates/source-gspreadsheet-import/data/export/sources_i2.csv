@@ -1,0 +1,67 @@
+Id,Title,Description,Accesspoints,Disciplines,Topics
+29,DataOne,"Examples: modules on data management: https://www.dataone.org/education-modules",https://www.dataone.org/education-modules,17,142
+30,Coursera,"Examples: MOOC on data management: https://www.coursera.org/learn/data-management",https://www.coursera.org/learn/data-management,17,69
+31,DCC,"Examples: Overview RDM Training materials: http://www.dcc.ac.uk/training/training-and-reference-materials",http://www.dcc.ac.uk/training/training-and-reference-materials,17,143
+32,"TU Delft","Examples: MOOC on open science: https://www.edx.org/course/open-science-sharing-your-research-with-the-world",https://www.edx.org/course/open-science-sharing-your-research-with-the-world,17,69
+33,RDNL,"Examples: Essentials4datasupport online guide and course(https://datasupport.researchdata.nl/en/) and MOOC",https://datasupport.researchdata.nl/en/,17,28|14
+34,RDNL/DCC,"Examples: course on delivering RDM services https://www.futurelearn.com/courses/delivering-research-data-management-services",https://www.futurelearn.com/courses/delivering-research-data-management-services,17,69
+35,"OpenScience MOOC","Examples: course on open science",https://opensciencemooc.eu/,17,69
+36,"EDINA and Data Library, University of Edinburgh","Online non-assessed course with guidelines on how to manage the digital data collected throughout research. It has been crafted for the use of post-graduate students, early career researchers, and also information professionals. 
+Examples: Research Data MANTRA","https://mantra.edina.ac.uk/
+http://www.ed.ac.uk/information-services/about/organisation/edl",17,28|144|145|146|147
+37,"European Commission","Examples: Guidelines on FAIR Data Management in Horizon 2020",https://ec.europa.eu/info/research-and-innovation_en,17,148
+38,"FD Mentor","Examples: ​Train the Trainer Concept for Research Data Management​ ​",https://www.forschungsdaten.org/index.php/FDMentor,17,127
+39,DANS,"Examples: DANS Data card game",https://dans.knaw.nl/nl/over/diensten/training-consultancy/Training,17|6|18,149
+40,JISC,"Examples: Research Data Management Toolkit, Skills and Training",https://www.jisc.ac.uk/,17,133|150|151|141|152
+41,GESIS,"At GESIS we offer a wide range of events, especially training courses on empirical social research methods. Our theory founded and hands-on courses develop participants’ methods skills and are aimed at both early career and senior researchers from Germany, Europe, and the whole world.",https://training.gesis.org/,6,
+42,"UK Data Service","Best practise guidance, tools, templates, training programme and training resources on a range of data management topics.
+Examples: https://www.ukdataservice.ac.uk/manage-data/training.aspx; https://www.ukdataservice.ac.uk/news-and-events/events",https://ukdataservice.ac.uk/manage-data.aspx,6|17,153|154|155|147
+43,"CLARIN Resource Families","CLARIN resource families collects and present in a uniform way the most prominent data types in the network of CLARIN consortia that display a high degree of maturity, are available for most EU languages, are a rich source of social and cultural data, and as such are highly relevant for research from a wide range of disciplines and methodological approaches in the Digital Humanities and Social Sciences as well as for cross-disciplinary and trans-national comparative research and data stewardship.
+Examples: Parliamentary corpora https://www.clarin.eu/resource-families/parliamentary-corpora",https://www.clarin.eu/resource-families,3|19|20,156
+44,"CLARIN Depositing Services","CLARIN centres offer a depositing service. They are willing to store the resources in their repository and assist with the technical and organisational details. This has a wide range of advantages:
+
+Long-term archiving: a storage guarantee can be given for a long period (up to 50 years in some cases)
+Resources can be cited easily with a persistent identifier.
+The resources and their metadata will be integrated into the infrastructure, making it possibe to search them efficiently.
+Password-protected resources can be made available via an institutional login.
+Once resources are integrated in the CLARIN infrastructure, they can be analyzed and enriched more easily with various linguistic tools (e.g. automated part-of-speech tagging, phonetic alignment or audio/video analysis).
+
+Examples: https://ufal-point.mff.cuni.cz/xmlui/page/deposit",https://www.clarin.eu/content/depositing-services,3|19|20,157
+45,"CLARIN Legal Information Platform","The platform aims to introduce researchers with basic notions related to the legislative and licensing framework in Europe on Copyright and Data Protection:
+
+Introduction to Copyright and Related Rights
+Licensing Practice
+Personal Data Protection
+It also includes proposals for:
+
+Further reading/Bibliography on Legal and Ethical Issues
+Useful links on Legal and Ethical Issues
+Examples: Introduction to the copyright of software (https://www.clarin.eu/content/clic-copyright-software)",https://www.clarin.eu/content/legal-information-platform,3|19|20,158
+46,Alison,"The platfoem offers free online courses (including course materials) on a range of subjects in humanities, including teaching styles and training techniques
+Examples: Effective communication Techniques for Teachers and Trainers course
+
+Growth Mindset for Teachers and Learners course
+
+Introduction to the Learning Process for Teachers and Trainers course
+
+Introduction to E-Learning Theory and Practice course
+
+Intructional Planning for Successful Teaching course
+
+https://alison.com/course/effective-communication-techniques-for-teachers-and-trainers-revisedhttps://alison.com/course/growth-mindsets-for-teachers-and-learnershttps://alison.com/course/introduction-to-the-learning-process-for-teachers-and-trainers-revisedhttps://alison.com/course/introduction-to-e-learning-theory-and-practice-revisedhttps://alison.com/course/instructional-planning-for-successful-teaching-revised",https://alison.com/courses/humanities,18|21,
+47,"LEARN project","The LEARN Project has created resources to help Research Performing Institutions manage their research data.
+Examples: Toolkit of Best Practice for Research Data Management
+20 RDM Best-Practice Recommendations",http://learn-rdm.eu/en/about/,17,159|160
+48,"NHS Education for Scotland","This Train the Trainer Toolkit provides information on training methodologies and training development
+Examples: Toolkit on training development and teachin-training methodologies, PPTs and handouts on specific training/related skills and theories",https://www.nes.scot.nhs.uk/media/2042600/trainthetrainers__final_.pdf|https://www.nes.scot.nhs.uk/education-and-training/by-theme-initiative/facilitation-of-learning/train-the-trainers-toolkit-resources.aspx,21,161
+49,UNODC,"This is a handout with soft skills for trianers and various exercises examples to make the training more interactive and engage the audience
+Examples: A handout with important soft skills for trainers",https://www.unodc.org/documents/treatnet/Volume-C/Trainers-toolkit/7_Training_skills.pdf,21,161|162
+50,INASP,"This is a training of trainers workshop toolkit
+Examples: toolkit for trainers",https://www.inasp.info/sites/default/files/2018-04/AuthorAID_ToT%20Toolkit.pdf,21,161|163
+51,DCAF,"Toolkit for trainers
+Examples: toolkit for trainers",https://www.dcaf.ch/sites/default/files/publications/documents/ENG_Media_Tool1.pdf,21,161|162
+52,"New Mexico Broadband Program","Toolkit for trainers
+Examples: toolkit for trainers","https://www.doit.state.nm.us/broadband/training/toolkit_downloads/Modules/TOOLKIT%20-%20BOOK%201%20-%20Preparation,%20Marketing,%20Instructional%20Tips.pdf",21,161|164
+53,LFT,"Toolkit for trainers
+Examples: toolkit for trainers",http://lft.ee/admin/upload/files/Guidlaines%20for%20training%20of%20trainers.pdf,21,161|164|162
+54,"GO FAIR Starter kit",,https://www.go-fair.org/resources/rdm-starter-kit/,,

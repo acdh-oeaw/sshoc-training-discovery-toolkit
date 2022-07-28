@@ -1,0 +1,8 @@
+uuid: 4c1153d2-1bea-433e-b51d-d858c3c15616
+langcode: en
+status: true
+dependencies: {  }
+name: Relations
+vid: relations
+description: 'Definition of relations between paragraphs and nodes (simulating triples)'
+weight: 0

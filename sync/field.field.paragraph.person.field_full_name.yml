@@ -1,0 +1,19 @@
+uuid: d2c33ab4-b18b-49d1-a72b-8491f28ef72b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_full_name
+    - paragraphs.paragraphs_type.person
+id: paragraph.person.field_full_name
+field_name: field_full_name
+entity_type: paragraph
+bundle: person
+label: 'Full name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
