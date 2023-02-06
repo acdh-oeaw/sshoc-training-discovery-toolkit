@@ -18,7 +18,7 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "~1.0",
         "drupal/bootstrap": "^3.21",
-        "drupal/core": "9.4.3 as 8.9.20",
+        "drupal/core": "^9.4.5",
         "drupal/core-composer-scaffold": "^9.0.0",
         "drupal/core-project-message": "^9.0.0",
         "drupal/core-recommended": "^9.0.0",
@@ -39,7 +39,7 @@
         "drupal/schema_metatag": "^2.2",
         "drupal/search_api": "^1.15",
         "drupal/search_api_autocomplete": "^1.6",
-        "drupal/search_api_sort_priority": "1.x-dev",
+        "drupal/search_api_sort_priority": "^1.10",
         "drupal/smtp": "~1.0",
         "drupal/token": "^1.5",
         "drupal/upgrade_status": "^3.0",
@@ -60,12 +60,6 @@
                 "web-root": "web/"
             }
         },
-	"enable-patching": true,
-        "patches": {
-            "drupal/search_api_sort_priority": {
-                "Drupal 9 compatibility fix": "https://www.drupal.org/files/issues/2020-07-28/d9-readiness-3136197-7.patch"
-            }
-	},
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
